@@ -4,7 +4,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Columna 1 -->
             <div>
-                <h4 class="font-bold text-gray-800 mb-4">Acceso de usuarios</h4>
+                <h4 class="font-bold text-gray-800 mb-4">Acerca de nosotros</h4>
                 <ul class="space-y-2">
                     <li><a href="<?php echo esc_url(home_url('/quienes-somos')); ?>" class="text-gray-600 hover:text-blue-600 transition">Quiénes somos</a></li>
                     <li><a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-gray-600 hover:text-blue-600 transition">Blog</a></li>
@@ -14,7 +14,7 @@
             
             <!-- Columna 2 -->
             <div>
-                <h4 class="font-bold text-gray-800 mb-4">Contenido útil</h4>
+                <h4 class="font-bold text-gray-800 mb-4">Creatblue HR</h4>
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer',
@@ -24,9 +24,9 @@
                         ?>
                         <ul class="space-y-2">
                             <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Entrenamiento</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Reclutamiento</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Reclutamiento +</a></li>
                             <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Selección</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Capacitación</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Consultoría</a></li>
                         </ul>
                         <?php
                     },
@@ -38,7 +38,7 @@
             
             <!-- Columna 3 -->
             <div>
-                <h4 class="font-bold text-gray-800 mb-4">Información</h4>
+                <h4 class="font-bold text-gray-800 mb-4">Ventas</h4>
                 <ul class="space-y-2">
                     <li>
                         <a href="mailto:info@creatblue.com" class="text-gray-600 hover:text-blue-600 transition">
@@ -55,9 +55,9 @@
             
             <!-- Columna 4 -->
             <div>
-                <h4 class="font-bold text-gray-800 mb-4">Redes de trabajo</h4>
+                <h4 class="font-bold text-gray-800 mb-4">Candidatos</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Enlaces útiles</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Bolsa de trabajo</a></li>
                 </ul>
             </div>
         </div>
@@ -105,8 +105,8 @@
         </div>
         
         <div class="text-center mt-8 text-gray-500 text-sm">
-            <p><?php bloginfo('name'); ?></p>
-            <p>&copy; Todos los derechos reservados <?php echo date('Y'); ?>. Puebla, Pue.</p>
+            <p><?php bloginfo('Creatblue México'); ?></p>
+            <p>&copy; Avenida JINT #300 Parque industrial JINT. Puebla, Pue.</p>
         </div>
     </div>
 </footer>

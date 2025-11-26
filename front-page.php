@@ -29,8 +29,8 @@ get_header();
 <section class="py-20 bg-gray-50 overflow-hidden">
     <div class="container mx-auto px-6">
         <div class="relative flex items-center justify-center">
-            <!-- Card azul a la izquierda saliendo -->
-            <div class="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-full max-w-md -ml-8 md:-ml-0">
+            <!-- Card azul a la izquierda saliendo - DETRÁS -->
+            <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-full max-w-md -ml-8 md:-ml-0">
                 <div class="bg-gradient-to-br from-blue-500 via-indigo-600 to-blue-700 rounded-3xl p-10 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                         Nuestras Soluciones
@@ -43,8 +43,8 @@ get_header();
             
             <!-- Contenedor principal con el círculo y las cards -->
             <div class="grid md:grid-cols-2 gap-8 items-center w-full max-w-6xl ml-auto">
-                <!-- Lado izquierdo - Gráfico circular de 4 EJES -->
-                <div class="relative flex justify-center md:justify-end items-center min-h-[500px]">
+                <!-- Lado izquierdo - Gráfico circular de 4 EJES - AL FRENTE -->
+                <div class="relative flex justify-center md:justify-end items-center min-h-[500px] z-30">
                     <div class="relative">
                         <!-- Círculo principal con sombra elevada -->
                         <div class="relative w-80 h-80 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-gray-900 transform hover:rotate-12 transition-transform duration-500">
@@ -97,8 +97,8 @@ get_header();
                     </div>
                 </div>
                 
-                <!-- Lado derecho - Lista de servicios con hovers mejorados -->
-                <div class="space-y-4 pl-0 md:pl-8">
+                <!-- Lado derecho - Lista de servicios con hovers mejorados - AL FRENTE -->
+                <div class="space-y-4 pl-0 md:pl-8 relative z-30">
                     <!-- Entrenamiento -->
                     <div class="group bg-white border-2 border-gray-200 rounded-2xl p-5 flex items-center justify-between cursor-pointer hover:bg-[#1e3a8a] hover:border-[#1e3a8a] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                         <div class="flex items-center space-x-4">
