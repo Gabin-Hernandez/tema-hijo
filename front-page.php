@@ -28,11 +28,13 @@ get_header();
 <!-- Sección Nuestras Soluciones -->
 <section class="py-20 bg-gray-50 relative overflow-hidden">
     <div class="container mx-auto px-6">
-        <div class="relative flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+        <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-start">
             
-            <!-- Card azul a la izquierda -->
-            <div class="w-full md:w-auto md:max-w-md z-10">
-                <div class="bg-gradient-to-br from-blue-500 via-indigo-600 to-blue-700 rounded-3xl p-8 md:p-10 shadow-2xl">
+            <!-- Contenedor unificado con fondo -->
+            <div class="relative flex flex-col md:flex-row items-center bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-700 rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
+                
+                <!-- Card de texto a la izquierda -->
+                <div class="w-full md:w-auto md:max-w-md z-10 p-8 md:p-10">
                     <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 md:mb-4 leading-tight">
                         Nuestras Soluciones
                     </h3>
@@ -40,19 +42,23 @@ get_header();
                         Encuentra el camino correcto con nosotros.
                     </p>
                 </div>
-            </div>
-            
-            <!-- Contenedor del círculo y cards -->
-            <div class="flex-1 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 
                 <!-- Círculo de 4 EJES usando la imagen -->
-                <div class="flex justify-center lg:justify-end z-20">
+                <div class="flex justify-center md:justify-start z-20 md:-mr-12">
                     <div class="relative w-64 h-64 md:w-80 md:h-80 transform hover:scale-105 transition-transform duration-500">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/circulo.png" 
                              alt="4 EJES - Nuestras Soluciones" 
                              class="w-full h-full object-contain drop-shadow-2xl">
                     </div>
                 </div>
+                
+            </div>
+            
+            <!-- Contenedor de las cards de servicios -->
+            <div class="w-full md:w-auto lg:max-w-md xl:max-w-lg mt-8 md:mt-0 md:ml-8 lg:ml-12 z-20">
+                
+                <!-- Lista de servicios -->
+                <div class="space-y-3 md:space-y-4">
                 
                 <!-- Lista de servicios -->
                 <div class="space-y-3 md:space-y-4 z-20">
