@@ -31,7 +31,7 @@ get_header();
         <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-center gap-4">
             
             <!-- Contenedor unificado con fondo -->
-            <div class="relative flex flex-col md:flex-row items-center bg-secondary rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
+            <div class="relative flex flex-col md:flex-row items-center bg-secondary rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl opacity-0 translate-y-8 transition-all duration-1000 ease-out animate-on-scroll" data-delay="200">
                 
                 <!-- Card de texto a la izquierda -->
                 <div class="w-full md:w-auto md:max-w-md z-10 p-8 md:p-10">
@@ -45,7 +45,7 @@ get_header();
                 
                 <!-- Círculo de 4 EJES usando la imagen -->
                 <div class="flex justify-center md:justify-start z-20 md:-mr-12">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 transform hover:scale-105 transition-transform duration-500">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 transform hover:scale-105 transition-transform duration-500 opacity-0 scale-75 animate-on-scroll" data-delay="600">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/circulo.webp" 
                              alt="4 EJES - Nuestras Soluciones" 
                              class="w-full h-full object-contain drop-shadow-2xl">
@@ -62,7 +62,7 @@ get_header();
                 <!-- Lista de servicios -->
                 <div class="space-y-3 md:space-y-4 z-20">
                     <!-- Entrenamiento -->
-                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300 flex-shrink-0">
                                 <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
@@ -77,7 +77,7 @@ get_header();
                     </div>
                     
                     <!-- Reclutamiento y selección -->
-                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300 flex-shrink-0">
                                 <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
@@ -92,7 +92,7 @@ get_header();
                     </div>
                     
                     <!-- Capacitación -->
-                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 opacity-0 translate-x-8 animate-on-scroll" data-delay="800">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300">
                                 <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
@@ -108,7 +108,7 @@ get_header();
                     </div>
                     
                     <!-- Consultoría -->
-                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-2 md:p-3 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 opacity-0 translate-x-8 animate-on-scroll" data-delay="1000">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300">
                                 <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
@@ -287,6 +287,49 @@ get_header();
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer para las animaciones de scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '-50px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                const delay = parseInt(element.dataset.delay) || 0;
+                
+                setTimeout(() => {
+                    element.classList.add('animate-in');
+                    element.classList.remove('opacity-0', 'translate-y-8', 'translate-x-8', 'scale-75');
+                }, delay);
+                
+                observer.unobserve(element);
+            }
+        });
+    }, observerOptions);
+
+    // Observar todos los elementos con la clase animate-on-scroll
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach((element) => {
+        observer.observe(element);
+    });
+});
+</script>
+
+<style>
+.animate-on-scroll {
+    transition: all 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) translateX(0) scale(1) !important;
+}
+</style>
 
 <?php
 get_footer();
