@@ -8,8 +8,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<!-- Header/Nav sticky con efecto glassmorphism -->
-<header class="sticky top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/30" id="main-header">
+<!-- Header/Nav fixed con efecto glassmorphism -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/30" id="main-header">
     <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
