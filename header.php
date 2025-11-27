@@ -55,9 +55,8 @@
             <!-- Botón derecha -->
             <div class="flex items-center space-x-4">
                 <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition font-medium">
-                    ACTION BT
+                <i class="fa-brands fa-whatsapp"></i> Chat ahora
                 </a>
-                
                 <!-- Menú móvil toggle -->
                 <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
