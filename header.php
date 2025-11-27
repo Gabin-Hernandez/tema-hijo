@@ -10,8 +10,8 @@
 
 <!-- Header/Nav con efecto glassmorphism -->
 <div class="container mx-auto">
-    <header class="backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/30" id="main-header">
-        <nav class="px-6 py-4">
+    <header class="backdrop-blur-md border-b border-white/10 shadow-lg bg-primary transition-all duration-300" id="main-header">
+        <nav class="px-6 py-4 transition-all duration-300" id="main-nav">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center">
@@ -21,7 +21,8 @@
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_light.png" 
                              alt="<?php bloginfo('name'); ?>" 
-                             class="h-16" 
+                             class="h-16 transition-all duration-300" 
+                             id="site-logo"
                              onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
                         <span class="text-white font-bold text-xl" style="display:none;">
                             <?php bloginfo('name'); ?>
@@ -92,8 +93,63 @@
 </div>
 
 <script>
-// Toggle menú móvil
+// Header sticky al hacer scroll con animación
 document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('main-header');
+    const nav = document.getElementById('main-nav');
+    const logo = document.getElementById('site-logo');
+    const container = header.closest('.container');
+    let isFixed = false;
+
+    window.addEventListener('scroll', function() {
+        const scrolled = window.scrollY;
+        
+        if (scrolled > 100 && !isFixed) {
+            // Hacer sticky
+            isFixed = true;
+            container.style.position = 'fixed';
+            container.style.top = '0';
+            container.style.left = '50%';
+            container.style.transform = 'translateX(-50%)';
+            container.style.zIndex = '9999';
+            container.style.width = '100%';
+            container.style.maxWidth = '1440px';
+            
+            // Cambiar background a 30% de opacidad
+            header.classList.remove('bg-primary');
+            header.classList.add('bg-primary/30');
+            
+            // Reducir tamaño
+            nav.style.paddingTop = '0.75rem';
+            nav.style.paddingBottom = '0.75rem';
+            if (logo) {
+                logo.style.height = '3rem';
+            }
+        } else if (scrolled <= 100 && isFixed) {
+            // Quitar sticky
+            isFixed = false;
+            container.style.position = 'static';
+            container.style.top = 'auto';
+            container.style.left = 'auto';
+            container.style.transform = 'none';
+            container.style.zIndex = 'auto';
+            container.style.width = 'auto';
+            container.style.maxWidth = '1440px';
+            
+            // Restaurar background opaco
+            header.classList.remove('bg-primary/30');
+            header.classList.add('bg-primary');
+            
+            // Restaurar tamaño
+            nav.style.paddingTop = '1rem';
+            nav.style.paddingBottom = '1rem';
+            if (logo) {
+                logo.style.height = '4rem';
+            }
+        }
+    });
+
+    // Toggle menú móvil
     const toggle = document.getElementById('mobile-menu-toggle');
     const menu = document.getElementById('mobile-menu');
     
