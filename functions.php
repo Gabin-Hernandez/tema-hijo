@@ -16,6 +16,18 @@ function add_tailwind_css() {
                     colors: {
                         primary: '#1c1e33',
                         secondary: '#85abff',
+                    },
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                    }
+                },
+                container: {
+                    center: true,
+                    screens: {
+                        sm: '100%',
+                        md: '100%',
+                        lg: '100%',
+                        xl: '1440px'
                     }
                 }
             }
