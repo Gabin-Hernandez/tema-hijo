@@ -182,10 +182,10 @@ get_header();
     </div>
     
     <!-- Efecto de partículas/puntos decorativos con parallax -->
-    <div class="absolute top-20 right-20 w-2 h-2 bg-blue-400 rounded-full opacity-50 particle-float" data-speed="0.5"></div>
-    <div class="absolute top-40 right-40 w-3 h-3 bg-purple-400 rounded-full opacity-40 particle-float" data-speed="-0.3"></div>
-    <div class="absolute bottom-32 left-32 w-2 h-2 bg-indigo-400 rounded-full opacity-50 particle-float" data-speed="0.8"></div>
-    <div class="absolute bottom-20 left-20 w-3 h-3 bg-blue-400 rounded-full opacity-30 particle-float" data-speed="-0.6"></div>
+    <div class="absolute top-20 right-20 w-2 h-2 bg-blue-400 rounded-full opacity-50 particle-float z-50" data-speed="0.5"></div>
+    <div class="absolute top-40 right-40 w-3 h-3 bg-purple-400 rounded-full opacity-40 particle-float z-50" data-speed="-0.3"></div>
+    <div class="absolute bottom-32 left-32 w-2 h-2 bg-indigo-400 rounded-full opacity-50 particle-float z-50" data-speed="0.8"></div>
+    <div class="absolute bottom-20 left-20 w-3 h-3 bg-blue-400 rounded-full opacity-30 particle-float z-50" data-speed="-0.6"></div>
 </section>
 
 <!-- Sección Diferenciadores -->
