@@ -143,27 +143,27 @@ get_header();
             
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
-                <p class="text-blue-300 uppercase tracking-[0.2em] text-md font-black mb-6">CREATBLUE ORIGINALS</p>
+                <p class="text-blue-300 uppercase tracking-[0.2em] text-md font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">CREATBLUE ORIGINALS</p>
                  <!-- Logo WorkForce -->
-                  <div>
+                  <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                     <div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png" 
                              alt="WORKFORCE" 
-                             class="block mb-3 max-w-xs md:max-w-sm lg:max-w-md">
+                             class="block mb-3 w-full max-w-[400px] h-auto">
                     </div>
                 </div>
                 <!-- Logo Creatmap -->
-                <div>
+                <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                     <div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_asset.png" 
                              alt="CREATmap" 
-                             class="max-w-xs md:max-w-sm lg:max-w-md">
+                             class="w-full max-w-[400px] h-auto">
                     </div>
                 </div>
             </div>
             
             <!-- Lado derecho - Imagen del trabajador -->
-            <div class="relative h-[400px] md:h-[500px] lg:h-[600px]">
+            <div class="relative h-[400px] md:h-[500px] lg:h-[600px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
                 <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
                     <!-- Overlay sutil -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
