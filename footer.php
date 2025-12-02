@@ -4,7 +4,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Columna 1 -->
             <div>
-                <h4 class="font-bold text-gray-800 mb-4">Acerca de nosotros</h4>
+                <h4 class="font-black text-secondary mb-4">Acerca de nosotros</h4>
                 <ul class="space-y-2">
                     <li><a href="<?php echo esc_url(home_url('/quienes-somos')); ?>" class="text-gray-600 hover:text-blue-600 transition">Quiénes somos</a></li>
                     <li><a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-gray-600 hover:text-blue-600 transition">Blog</a></li>
@@ -46,8 +46,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="tel:0001119999" class="text-gray-600 hover:text-blue-600 transition">
-                            000 111 9999
+                        <a href="tel:8001121050" class="text-gray-600 hover:text-blue-600 transition">
+                           800 112 1050
                         </a>
                     </li>
                 </ul>

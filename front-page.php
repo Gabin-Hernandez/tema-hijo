@@ -130,7 +130,7 @@ get_header();
 <!-- Sección Creatblue Originals con corte diagonal y onda -->
 <section class="relative overflow-hidden" style="clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 100%);">
     <!-- Fondo con degradado radial -->
-    <div class="absolute inset-0 bg-gradient-radial from-secondary to-primary"></div>
+    <div class="absolute inset-0 bg-gradient-radial from-[#2f3082] to-primary"></div>
     
     <!-- Onda expansiva de degradado morado -->
     <div class="absolute inset-0 opacity-40">
