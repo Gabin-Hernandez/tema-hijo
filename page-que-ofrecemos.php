@@ -281,7 +281,7 @@ get_header();
             
             <!-- Imagen pequeña superior derecha: Disminuye la accidentabilidad -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-60 md:h-60 opacity-0 scale-75 animate-on-scroll" data-delay="800">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima5.jpg" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
                      alt="Disminuye la accidentabilidad" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
