@@ -170,9 +170,6 @@ get_header();
                          alt="Trabajador profesional con tablet" 
                          class="w-full h-full object-cover">
                 </div>
-                
-                <!-- Efecto de resplandor -->
-                <div class="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-2xl blur-2xl -z-10"></div>
             </div>
             
         </div>

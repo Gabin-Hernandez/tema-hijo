@@ -235,13 +235,13 @@ get_header();
 </section>
 
 <!-- Sección WORKFORCE ready to go! -->
-<section class="relative overflow-hidden py-20 bg-gradient-to-br from-[#1e2847] via-[#2a2d5a] to-[#0f1229]">
+<section class="relative overflow-hidden py-20 bg-gradient-to-br from-[#2f3082] to-[#0f1229]">
     <!-- Efectos de fondo -->
     <div class="absolute inset-0 opacity-40">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-b from-[#2f3082]/30 to-primary/20 rounded-full blur-3xl"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-b from-[#2f3082]/20 to-primary/10 rounded-full blur-2xl"></div>
     </div>
-    
+
     <div class="container mx-auto px-6 relative z-10">
         <!-- Header -->
         <div class="grid max-w-5xl mx-auto md:grid-cols-2 gap-8 items-center mb-16">
