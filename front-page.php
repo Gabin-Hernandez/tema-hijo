@@ -128,7 +128,7 @@ get_header();
 </section>
 
 <!-- Sección Creatblue Originals con corte diagonal y onda -->
-<section class="relative overflow-hidden" style="clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 100%);">
+<section class="relative overflow-hidden" style="clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0 100%);">
     <!-- Fondo con degradado radial -->
     <div class="absolute inset-0 bg-gradient-radial from-[#2f3082] to-primary"></div>
     
@@ -175,7 +175,7 @@ get_header();
                 </div>
                 
                 <!-- Efecto de resplandor -->
-                <div class="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-2xl -z-10"></div>
+                <div class="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-2xl blur-2xl -z-10"></div>
             </div>
             
         </div>
