@@ -319,7 +319,15 @@ document.addEventListener('DOMContentLoaded', function() {
         particles.forEach(particle => {
             const speed = parseFloat(particle.dataset.speed) || 0.5;
             const yPos = -(scrollY * speed);
-            particle.style.transform = `translateY(${yPos}px)`;
+            
+            // Check if element has animate-on-scroll class and is animated in
+            if (particle.classList.contains('animate-on-scroll') && particle.classList.contains('animate-in')) {
+                // Preserve the existing transform from animation and add parallax
+                particle.style.transform = `translateY(${yPos}px)`;
+            } else if (!particle.classList.contains('animate-on-scroll')) {
+                // For elements without scroll animation, just apply parallax
+                particle.style.transform = `translateY(${yPos}px)`;
+            }
         });
     });
 });
@@ -332,6 +340,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .animate-on-scroll.animate-in {
     opacity: 1 !important;
+    /* No aplicamos transform aquí para evitar conflictos con parallax */
+}
+
+.animate-on-scroll.animate-in:not(.particle-float) {
     transform: translateY(0) translateX(0) scale(1) !important;
 }
 
