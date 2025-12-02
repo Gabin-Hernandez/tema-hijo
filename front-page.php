@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <!-- Hero Section con fondo de imagen -->
-<section class="relative min-h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070');">
+<section class="relative min-h-screen bg-cover bg-center" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg');">
     <!-- Overlay oscuro -->
     <div class="absolute inset-0 bg-black/50"></div>
     
@@ -169,7 +169,7 @@ get_header();
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
                     
                     <!-- Imagen -->
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
                          alt="Trabajador profesional con tablet" 
                          class="w-full h-full object-cover">
                 </div>
@@ -188,7 +188,7 @@ get_header();
         <!-- Título -->
         <div class="mb-16 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
-            <p class="text-gray-700 text-lg max-w-3xl leading-relaxed">
+            <p class="text-gray-700 text-lg max-w-2xl leading-relaxed">
                 En Creatblue México nos caracterizamos por incrementar la productividad en todas las zonas que trabajamos, por medio de la capacitación y entrenamiento de los trabajadores y gerentes de los negocios.
             </p>
         </div>
@@ -266,7 +266,7 @@ get_header();
             
             <!-- Imagen de fondo a la derecha -->
             <div class="absolute right-0 top-0 bottom-0 w-1/3 hidden lg:block opacity-30">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo2.jpg" 
                      alt="Worker background" 
                      class="w-full h-full object-cover">
             </div>

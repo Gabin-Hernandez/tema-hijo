@@ -69,7 +69,7 @@
                     <?php the_custom_logo(); ?>
                 <?php else : ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" 
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_dark.png" 
                              alt="<?php bloginfo('name'); ?>" 
                              class="h-8" 
                              onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
