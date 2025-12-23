@@ -233,6 +233,17 @@ get_header();
     </div>
 </section>
 
+<!-- Sección Entran con ganas y salen ¡Preparados! -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            Entran con ganas y salen ¡Preparados!
+            </h2>
+        </div>
+    </div>
+</section>
+
 <!-- Sección WORKFORCE ready to go! -->
 <section class="relative overflow-hidden py-20 bg-gradient-to-br from-[#2f3082] to-[#0f1229]">
     <!-- Efectos de fondo -->
