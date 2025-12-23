@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Qué Ofrecemos
- * Description: Página de servicios y soluciones de Creatblue
+ * Template Name: Reclutamiento
+ * Description: Página de servicios de reclutamiento
  */
 
 get_header();
