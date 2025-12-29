@@ -110,6 +110,63 @@ get_header();
     </div>
 </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer para las animaciones de scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '-50px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                const delay = parseInt(element.dataset.delay) || 0;
+                
+                setTimeout(() => {
+                    element.classList.add('animate-in');
+                    element.classList.remove('opacity-0', 'translate-y-8', 'translate-x-8', 'scale-75');
+                }, delay);
+                
+                observer.unobserve(element);
+            }
+        });
+    }, observerOptions);
+
+    // Observar todos los elementos con la clase animate-on-scroll
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach((element) => {
+        observer.observe(element);
+    });
+});
+</script>
+
+<style>
+.animate-on-scroll {
+    transition: all 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) translateX(0) scale(1) !important;
+}
+
+/* Animación flotante para los iconos de países */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+</style>
+
 <?php
 get_footer();
 ?>
