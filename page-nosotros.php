@@ -24,7 +24,7 @@ get_header();
 </section>
 
 <!-- Sección: Quiénes Somos -->
-<section class="py-20">
+<section class="py-20 bg-white">
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             
