@@ -62,6 +62,41 @@ get_header();
     </div>
 </section>
 
+<!-- Sección: La Importancia de Creatblue -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            
+            <!-- Columna izquierda - Contenedor de imagen -->
+            <div class="opacity-0 scale-75 animate-on-scroll" data-delay="400">
+                <div class="w-full h-[400px] bg-gradient-to-br from-primary to-[#1a1d4a] rounded-2xl shadow-2xl">
+                    <!-- Placeholder para imagen - cambiar después -->
+                    <div class="w-full h-full flex items-center justify-center">
+                        <span class="text-white/20 text-xl">Imagen placeholder</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna derecha - Texto -->
+            <div class="space-y-6 opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
+                    LA IMPORTANCIA DE CREATBLUE PARA LAS EMPRESAS
+                </h2>
+                
+                <div class="space-y-4 text-primary">
+                    <p class="leading-relaxed">
+                        En el mercado laboral existe una alta demanda de personal calificado que crece día con día, sin que esta necesidad pueda ser atendida eficientemente,
+                    </p>
+                    <p class="text-right italic">
+                        hasta ahora...
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 <!-- Sección Promesa Creatblue cumplida. -->
 <section class="relative py-20 overflow-hidden">
     <!-- Imagen de fondo de la sección -->
