@@ -22,4 +22,4 @@ jobs:
           server: 195.35.33.109
           username: u947001429.gaboprueba
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: wp-content/themes/nombre-de-tu-child-theme/
+          server-dir: wp-content/themes/child-theme/
