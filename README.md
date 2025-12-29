@@ -6,7 +6,7 @@ Tema hijo personalizado para WordPress con diseño moderno usando Tailwind CSS.
 
 ```
 tema-hijos/
-├── assets/                 # Recursos (imágenes, logos, etc.)
+├── assets/                 # Recursos (imágenes, logos, etc.n)
 │   └── logo.png           # Logo del sitio (coloca tu logo aquí)
 ├── header.php             # Header reutilizable (navbar)
 ├── footer.php             # Footer reutilizable
