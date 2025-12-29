@@ -9,23 +9,17 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Obtener código más reciente
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
 
-  - name: 📂 Sincronizar archivos FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: 195.35.33.109  # La IP sigue sirviendo (o puedes usar ftp.floralwhite...)
-        
-        # 1. CAMBIO: Tu nuevo usuario específico
-        username: u947001429.gaboprueba
-        
-        password: ${{ secrets.FTP_PASSWORD }}
-        
-        # 2. CAMBIO DE RUTA (Importante):
-        # Al crear el usuario asignado a "public_html", esa es su raíz.
-        # Por tanto, quitamos "/public_html/" del inicio.
-        server-dir: ./wp-content/themes/nombre-de-tu-child-theme/
+    steps:
+      - name: 🚚 Obtener código más reciente
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 📂 Sincronizar archivos FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 195.35.33.109
+          username: u947001429.gaboprueba
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: wp-content/themes/nombre-de-tu-child-theme/
